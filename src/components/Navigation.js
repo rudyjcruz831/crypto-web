@@ -11,9 +11,9 @@ const Navigation  = () => {
     )
 }
 
-const headingStyle = {
-    display: 'flex',
-    justifyContent: 'center',
-}
+// const headingStyle = {
+//     display: 'flex',
+//     justifyContent: 'center',
+// }
 
 export default Navigation
