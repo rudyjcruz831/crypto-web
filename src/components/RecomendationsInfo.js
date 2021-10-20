@@ -19,7 +19,7 @@ const RecomendationsInfo = ({type}) => {
 
     const fetchBestPrice = async () => {
         // try {
-        const res = await fetch("http://localhost:8080/best")
+        const res = await fetch("https://cryptic-thicket-61793.herokuapp.com/best")
         const data = await res.json()
         console.log(data)
         return data 
