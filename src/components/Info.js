@@ -1,5 +1,6 @@
 import {Container, Row, Col} from 'react-bootstrap'
 import CardCryptoInfo from './CardCryptoInfo'
+import RecomendationCard from './RecomendationCard'
 
 const Info = ({crypto}) => {
     return (
@@ -26,10 +27,21 @@ const Info = ({crypto}) => {
                     {/* <CardInfo headerName='Recomendations'/> */}
                 </Col>
             </Row>
-            <hr />
+            <Row>
+            <Col>
+                <hr />
+            </Col>
+            <Col>
+                <hr />                
+            </Col>
+            </Row>
+            
             <Row>
                 <Col>
-                    {/* <CardCryptoInfo headerName='Recomendations'/> */}
+                    <RecomendationCard crypto={crypto} type="Bitcoin"/>
+                </Col>
+                <Col>
+                    <RecomendationCard crypto={crypto} type="Ethereum"/>
                 </Col>
             </Row>
         </Container>

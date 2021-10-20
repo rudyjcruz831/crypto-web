@@ -26,6 +26,7 @@ function App() {
       console.log(data.Exchanges)
       return data
   }
+  
   return (
     <div className="App">
       <Navigation/>
