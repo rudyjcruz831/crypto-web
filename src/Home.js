@@ -15,12 +15,12 @@ const Home = () => {
             }
             // console.log("inside useEffect")
         }
-        getCrypto()
+        getCrypto() 
     },[])
 
     // fetch crypto data
     const fetchCrypto = async () =>{
-        const res = await fetch("https://cryptic-thicket-61793.herokuapp.com/info")
+        const res = await fetch("http://localhost:8081/info")
         const data = await res.json()
         console.log(data.Exchanges)
         return data
