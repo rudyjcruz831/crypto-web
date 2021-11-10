@@ -6,7 +6,7 @@ const RecomendationCard = (props) => {
 
     return (
         <Card>
-            <Card.Header>Recomendation</Card.Header>
+            <Card.Header>Recommendation</Card.Header>
             <Card.Body>
                 <Card.Title></Card.Title>
                 <RecomendationsInfo type ={props.type} exchanges={props.crypto.Exchanges}/>
